@@ -1,0 +1,74 @@
+                                                      :root {
+                                                         --green: rgb(71, 199, 55);
+                                                         --white: #000000;
+                                                         --black: #0048ff;
+                                                         --softblue: #006aff;
+                                                         --reddark: #000000; 
+                                                         --red: #ffffff;
+                                                     }
+                                                     
+                                                     * {
+                                                         color: var(--fontColor);
+                                                         font-family: helvetica;
+                                                     }
+                                                     
+                                                     body {
+                                                         background: var(--bg);
+                                                     }
+                                                     
+                                                     ul {
+                                                         font-family: monospace;
+                                                     }
+                                                     
+                                                     li {
+                                                         list-style: square;
+                                                     }
+                                                     
+                                                     .light-theme {
+                                                         --bg: var(--softblue);
+                                                         --fontColor: var(--green);
+                                                     }
+                                                     
+                                                     .darktheme {
+                                                         --bg: var(--black);
+                                                         --fontColor: var(--white);
+                                                     }
+                                                     
+                                                     .btn {
+                                                         color: var(--btnFontColor);
+                                                         background-color: var(--btnBg);
+                                                     }
+                                                     
+                                                     .btn2 {
+                                                         color: var(--btn2FontColor);
+                                                         background-color: var(--btn2Bg);
+                                                     }
+                                                     
+                                                     .btn {
+                                                         position: absolute 200px;
+                                                         left: 1200px;
+                                                         height: 50px;
+                                                         width: 50px;
+                                                         border-radius: 100%;
+                                                         border: none;
+                                                         color: var(--btnFontColor);
+                                                         background-color: var(--btnBg);
+                                                     }
+                                                     
+                                                     .btn:focus {
+                                                         outline-style: none;
+                                                     }
+                                                     
+                                                     .light-theme {
+                                                         --bg: var(--green);
+                                                         --fontColor: var(--red);
+                                                         --btnBg: var(--red);
+                                                         --btnFontColor: var(--white);
+                                                     }
+                                                     
+                                                     .dark-theme {
+                                                         --bg: var(--black);
+                                                         --fontColor: var(--red);
+                                                         --btnBg: var(--softblue);
+                                                         --btnFontColor: var(--red);
+                                                     }
